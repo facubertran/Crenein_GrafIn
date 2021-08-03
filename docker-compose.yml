@@ -12,7 +12,7 @@ services:
       - DOCKER_INFLUXDB_INIT_ORG=NombreEmpresa
       - DOCKER_INFLUXDB_INIT_BUCKET=BucketPorDefecto
       - DOCKER_INFLUXDB_INIT_USERNAME=admin
-      - DOCKER_INFLUXDB_INIT_PASSWORD=m0n170r30
+      - DOCKER_INFLUXDB_INIT_PASSWORD=admin
     restart: always
 
   grafana:
@@ -25,7 +25,7 @@ services:
       - influxdb
     environment:
       - GF_SECURITY_ADMIN_USER=admin
-      - GF_SECURITY_ADMIN_PASSWORD=m0n170r30
+      - GF_SECURITY_ADMIN_PASSWORD=admin
     restart: always
 
 volumes:
